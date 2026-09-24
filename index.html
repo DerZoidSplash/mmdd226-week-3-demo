@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Meal Masher</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>The Meal Masher</h1>
+    </header>
+
+    <main>
+        <section class="filter-section">
+            <div class="filter-row">
+                Hungry for something 
+                <select id="flavor-select" class="inline-select">
+                    <option value="Spicy" selected>Spicy</option>
+                    <option value="Sweet">Sweet</option>
+                    <option value="Savory">Savory</option>
+                    <option value="Any">Any</option>
+                </select> ?
+            </div>
+            <div class="filter-row">
+                I have 
+                <select id="time-select" class="inline-select">
+                    <option value="15">15 min</option>
+                    <option value="30">30 min</option>
+                    <option value="45" selected>45 min</option>
+                    <option value="60">60 min</option>
+                    <option value="999">Unlimited</option>
+                </select> 
+                and have 
+                <select id="ingredient-select" class="inline-select">
+                    <option value="Chicken" selected>Chicken</option>
+                    <option value="Beef">Beef</option>
+                    <option value="Pork">Pork</option>
+                    <option value="Lamb">Lamb</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Any">Any ingredient</option>
+                </select>.
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2 class="recipes-header">Recipes</h2>
+            <div id="recipes-grid" class="recipes-grid">
+                <!-- Recipe cards dynamically populated by js/app.js -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

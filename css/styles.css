@@ -1,0 +1,126 @@
+/* Reset & Layout Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #333333;
+    background-color: #fcfcfc;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    border-bottom: 2px solid #333333;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+/* Filter Controls Section - Designed to match sketch sentence structure */
+.filter-section {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: #222222;
+}
+
+.filter-row {
+    margin-bottom: 0.5rem;
+}
+
+.inline-select {
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: inherit;
+    border: none;
+    border-bottom: 2px solid #333333;
+    background: transparent;
+    padding: 2px 8px;
+    color: #111111;
+    cursor: pointer;
+    outline: none;
+}
+
+.inline-select:focus {
+    border-bottom-color: #555555;
+    background-color: #f0f0f0;
+}
+
+/* Recipes Divider & Section */
+.divider {
+    border: none;
+    border-top: 1px solid #cccccc;
+    margin-bottom: 2rem;
+}
+
+.recipes-header {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Grid Layout for Recipe Cards */
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Recipe Card Styling (Mid-fidelity prototype look) */
+.recipe-card {
+    border: 2px solid #333333;
+    border-radius: 4px;
+    padding: 1.2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 140px;
+    background-color: #e5e5e5;
+    border: 1px dashed #aaaaaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666666;
+    font-size: 0.9rem;
+    border-radius: 2px;
+}
+
+.recipe-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #111111;
+}
+
+.recipe-meta {
+    font-size: 0.9rem;
+    color: #555555;
+    font-weight: 500;
+}
+
+.recipe-description {
+    font-size: 0.9rem;
+    color: #666666;
+    line-height: 1.4;
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    font-size: 1.1rem;
+    color: #777777;
+    font-style: italic;
+    padding: 2rem 0;
+}
